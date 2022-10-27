@@ -2,9 +2,9 @@
 {
     public class Model
     {
-        public string SlackUsername { get; set; } = string.Empty;
-        public bool Backend { get; set; }
-        public int Age { get; set; }
-        public string Bio { get; set; } = string.Empty ;
+        public int StatusCode { get; set; }
+        public bool Status { get; set; }
+        public Data? data { get; set; }
+       
     }
 }

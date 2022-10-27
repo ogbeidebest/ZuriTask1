@@ -15,10 +15,10 @@ namespace ZuriTask_.Controllers
         }
 
         [HttpGet("Get")]
-        public Model Get()
+        public IActionResult Get()
         {
             var user = _userService.Get();
-            return user;
+            return StatusCode(user.StatusCode, user);
         }
     }
 }
