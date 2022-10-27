@@ -15,7 +15,7 @@ namespace ZuriTask_.Controllers
         }
 
         [HttpGet("Get")]
-        public IEnumerable<Model> Get()
+        public Model Get()
         {
             var user = _userService.Get();
             return user;
