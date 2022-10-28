@@ -2,6 +2,6 @@
 {
     public interface IUserService
     {
-        Model Get();
+        Data Get();
     }
 }
